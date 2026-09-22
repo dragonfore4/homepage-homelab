@@ -10,8 +10,26 @@ data:
     mode: cluster
 
   settings.yaml: |
-    title: Homelab
+    title: Sirasith Homelab
     theme: dark
+    color: slate
+    headerStyle: clean
+    statusStyle: dot
+    useEqualHeights: true
+    hideVersion: true
+    layout:
+      Applications:
+        style: row
+        columns: 4
+      Cluster Management:
+        style: row
+        columns: 4
+      Observability:
+        style: row
+        columns: 3
+      Storage:
+        style: row
+        columns: 3
 
   custom.css: ""
 
@@ -22,15 +40,30 @@ data:
       - Proxmox:
           - abbr: PX
             href: https://proxmox.home.sirasith.net:8006
+      - Kubernetes:
+          - abbr: K8S
+            href: https://kubernetes.io/docs/home/
     - Developer:
         - GitHub:
             - abbr: GH
               href: https://github.com/dragonfore4
+        - Argo CD:
+            - abbr: CD
+              href: https://argocd.home.sirasith.net
 
   services.yaml: |
     []
 
   widgets.yaml: |
+    - greeting:
+        text_size: xl
+        text: Sirasith's Homelab
+    - datetime:
+        text_size: xl
+        format:
+          dateStyle: long
+          timeStyle: short
+          hour12: false
     - kubernetes:
         cluster:
           show: true
