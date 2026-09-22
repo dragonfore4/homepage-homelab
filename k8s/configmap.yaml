@@ -18,10 +18,14 @@ data:
   custom.js: ""
 
   bookmarks.yaml: |
+    - Homelab:
+      - Proxmox:
+          - abbr: PX
+            href: https://proxmox.home.sirasith.net
     - Developer:
         - GitHub:
             - abbr: GH
-              href: https://github.com/
+              href: https://github.com/dragonfore4
 
   services.yaml: |
     []
