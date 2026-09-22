@@ -21,7 +21,7 @@ data:
     - Homelab:
       - Proxmox:
           - abbr: PX
-            href: https://proxmox.home.sirasith.net
+            href: https://proxmox.home.sirasith.net:8006
     - Developer:
         - GitHub:
             - abbr: GH
