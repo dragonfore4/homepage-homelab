@@ -31,7 +31,61 @@ data:
         style: row
         columns: 3
 
-  custom.css: ""
+  custom.css: |
+    :root {
+      --color-primary: 125 211 252;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.16), transparent 32rem),
+        radial-gradient(circle at 90% 10%, rgba(129, 140, 248, 0.14), transparent 30rem),
+        #111827;
+    }
+
+    #page_container {
+      background: transparent;
+    }
+
+    .group-title {
+      margin-top: 1.5rem;
+      color: rgb(226 232 240);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .service-card,
+    .bookmark {
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      border-radius: 0.9rem;
+      background: rgba(30, 41, 59, 0.78);
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.18);
+      backdrop-filter: blur(10px);
+      transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+    }
+
+    .service-card:hover,
+    .bookmark:hover {
+      transform: translateY(-3px);
+      border-color: rgba(125, 211, 252, 0.55);
+      box-shadow: 0 14px 34px rgba(2, 6, 23, 0.34);
+    }
+
+    .service-card-title,
+    .bookmark-title {
+      font-weight: 600;
+    }
+
+    .service-card-description {
+      color: rgb(148 163 184);
+    }
+
+    .widget-container {
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      border-radius: 0.9rem;
+      background: rgba(15, 23, 42, 0.52);
+      box-shadow: 0 8px 24px rgba(2, 6, 23, 0.14);
+    }
 
   custom.js: ""
 
