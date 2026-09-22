@@ -15,6 +15,7 @@ data:
     color: slate
     headerStyle: clean
     statusStyle: dot
+    fullWidth: true
     useEqualHeights: true
     hideVersion: true
     layout:
@@ -36,15 +37,20 @@ data:
       --color-primary: 125 211 252;
     }
 
-    body {
+    html,
+    body,
+    #page_container {
       background:
         radial-gradient(circle at 10% 0%, rgba(56, 189, 248, 0.16), transparent 32rem),
         radial-gradient(circle at 90% 10%, rgba(129, 140, 248, 0.14), transparent 30rem),
-        #111827;
+        #0f172a !important;
+      min-height: 100vh;
     }
 
     #page_container {
-      background: transparent;
+      max-width: 100% !important;
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
 
     .group-title {
